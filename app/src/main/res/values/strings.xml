@@ -8,7 +8,7 @@
     <string name="setting_force_dark_mode_snackbar">Restart any apps to apply this change</string>
     <string name="setting_day_night_auto_title">Auto Dark Theme</string>
     <string name="setting_day_night_auto_desc">Automatically enable dark theme at sunset and disable at sunrise</string>
-    <string name="setting_whitelist_title">Enabled Apps</string>
+    <string name="setting_whitelist_title">Disabled Apps</string>
     <string name="setting_faq_about_toggle">FAQ &amp; About</string>
     <string name="setting_faq_title">Frequently Asked Questions</string>
     <string name="setting_xda_thread_title">XDA Thread</string>

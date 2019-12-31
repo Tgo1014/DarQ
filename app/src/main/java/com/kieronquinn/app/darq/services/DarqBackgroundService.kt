@@ -246,12 +246,9 @@ class DarqBackgroundService : AccessibilityService() {
     override fun onAccessibilityEvent(event: AccessibilityEvent) {
         if (isGlobalForceDarkEnabled) return
         val packageName = event.packageName.toString()
-        if (event.eventType == AccessibilityEvent.TYPE_WINDOW_CONTENT_CHANGED && packageName != currentPackageName && !ignoredPackages.contains(
-                packageName
-            )
-        ) {
+        if (event.eventType == AccessibilityEvent.TYPE_WINDOW_CONTENT_CHANGED && packageName != currentPackageName && !ignoredPackages.contains(packageName)        ) {
             Log.d(TAG, "Package $packageName")
-            if (enabledApps.contains(packageName)) enableForceDark()
+            if (!enabledApps.contains(packageName)) enableForceDark()
             else disableForceDark()
             currentPackageName = packageName
 
